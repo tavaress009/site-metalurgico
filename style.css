@@ -3,31 +3,36 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #111; /* fundo preto */
+    color: #f0f0f0; /* texto claro */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #000; /* preto */
+    color: #00aaff; /* azul */
     padding: 1rem 0;
     text-align: center;
+    border-bottom: 2px solid #00aaff;
 }
 
 nav {
-    background-color: #444;
+    background-color: #0d0d0d; /* preto escuro */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    border-bottom: 2px solid #00aaff;
 }
 
 nav a {
-    color: #fff;
+    color: #00aaff; /* azul */
     padding: 1rem;
     text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
-    background-color: #555;
+    background-color: #005577; /* azul escuro */
+    color: #fff;
 }
 
 .hero {
@@ -46,14 +51,28 @@ nav a:hover {
     max-width: 1100px;
     margin: auto;
     padding: 2rem;
-    background-color: white;
+    background-color: #1a1a1a; /* cinza escuro */
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.container h2 {
+    color: #00aaff;
+    border-bottom: 1px solid #00aaff;
+    padding-bottom: 0.5rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #333;
-    color: #fff;
+    background-color: #000;
+    color: #00aaff;
+    margin-top: 2rem;
 }
 
 @media (max-width: 768px) {
